@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Job Portal</h1>
+        <p class="subtitle">
+            Find your next opportunity
+        </p>
+        <div class="filters">
+            <input
+                type="text"
+                id="searchInput"
+                class="search-input"
+                placeholder="Search by job title..."
+            >
+            <select id="locationFilter" class="location-filter">
+                <option value="">All Locations</option>
+            </select>
+            <select id="companyFilter" class="company-filter">
+                <option value="">All Companies</option>
+            </select>
+            <select id="experienceFilter" class="experience-filter">
+                <option value="">All Experience Levels</option>
+                <option value="Junior">Junior</option>
+                <option value="Mid">Mid</option>
+                <option value="Senior">Senior</option>
+            </select>
+        </div>
+        <p id="jobCount" class="job-count"></p>
+        <p id="noResults" class="no-results" hidden>No jobs found</p>
+        <div id="jobs"></div>
+    </div>
+</body>
+    <script src="app.js"></script>
+</html>
